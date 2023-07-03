@@ -32,7 +32,7 @@ public class TestScript
     }
     
     [UnityTest]
-    public IEnumerator TestScriptWithEnumeratorPasses()
+    public IEnumerator AsteroidFalling()
     {
         GameObject asteroid = game.SpawnAsteroid();
 
@@ -44,7 +44,7 @@ public class TestScript
     }
 
     [UnityTest]
-    public IEnumerator DestroyAsteroid()
+    public IEnumerator LaserDestroyAsteroid()
     {
         GameObject asteroid = game.SpawnAsteroid();
         GameObject bullet = MonoBehaviour.Instantiate(Resources.Load<GameObject>("Prefabs/Laser"));
